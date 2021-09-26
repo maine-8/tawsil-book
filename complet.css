@@ -1,0 +1,163 @@
+ /*.container{
+    display: grid;
+    /* -------------------------------------------- chhal bghiti mn row o column --------------------------------------------------------- 
+    /* grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(3,1fr);
+    /*--------------------------------------------- ta thkm fiha 3la hssab lktba lii 3ndk -------------------------------------------------
+    grid-auto-rows: minmax(100px,auto); 
+    /*--------------------------------------------- lfaragh lii bin row o column ----------------------------------------------------------
+    grid-row-gap:10px;
+    grid-column-gap: 10px;
+    /* grid-gap: 10px; 
+    /* -------------------------------------------- كيفية التحكم في موقع العناصر -------------------------------------------------- 
+    /* justify-items: start ;
+    align-items: end; 
+
+}
+
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.box1{
+    /*  -----------------------------------------كيفية التحكم في موقع الاعمدة------------------------------------------------------------
+    /* grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-column:1/4 ;
+}
+
+/* .box2{
+    /* ------------------------------------------- كيفية التحكم في موقع الصفوف -------------------------------------------------------- 
+    grid-row: 2/4;
+}
+
+.box4{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+
+}  
+/* ------------------------------------------------------------------- BOX MODEL -------------------------------------------------------- 
+             WIDTH   HEIGHT   PADDING   MARGIN   BORDER
+
+*/
+
+
+.container2{
+    display: grid;
+    grid-auto-rows: minmax(200px,auto);
+    grid-template-areas: 
+    "head head head head head"
+    "slt slt nav nav nav"
+    "slt slt cnt cnt cnt"
+    "slt slt cnt cnt cnt"
+    "slt slt cnt cnt cnt"
+    "fot fot fot fot fot"
+    ;
+    grid-gap: 10px;
+    
+}
+
+.box11{
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+.head{
+    grid-area: head;
+}
+.nav{
+    grid-area: nav;
+}
+.sideleft{
+    grid-area: slt;
+}
+.contant{
+    grid-area: cnt;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    
+}
+.footer{
+    grid-area: fot;
+}
+p{
+    background-color: teal;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    float: right;
+}
+
+
+/* ---------------------------------------------------------------media query----------------------------------------------------- */
+
+/* small */
+/* @media (min-width:576px) {
+    
+    
+}
+
+/* medium 
+@media (min-width:768px) {
+    
+    
+}
+
+/* large 
+@media (min-width:992px) {
+    
+    
+}
+/* extra large 
+@media (min-width:1200px) {
+    
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
